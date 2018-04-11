@@ -1,0 +1,206 @@
+/* Regular */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto/Regular/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/roboto/Regular/Roboto-Regular.woff') format('woff'),
+    url('../fonts/roboto/Regular/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto/Regular/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/roboto/Regular/Roboto-Regular.woff') format('woff'),
+    url('../fonts/roboto/Regular/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* End Regular */
+
+/* Medium */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto/Medium/Roboto-Medium.woff2') format('woff2'),
+    url('../fonts/roboto/Medium/Roboto-Medium.woff') format('woff'),
+    url('../fonts/roboto/Medium/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+/* End Medium */
+
+/* Bold */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto/Bold/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/roboto/Bold/Roboto-Bold.woff') format('woff'),
+    url('../fonts/roboto/Bold/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+/* End Bold */
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: 'Roboto';
+	font-weight: 400;
+}
+.wrap {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(180deg, rgba(16, 82, 172, 0.85) 99.99%, rgba(255, 255, 255, 0) 100%), url('../images/kids-bg-img.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    padding: 35px 10px;
+}
+main {
+	flex: 1 0 auto;
+}
+footer {
+	flex-shrink: 0;
+	color: #fff;
+	text-align: right;
+	margin-top: 20px;
+}
+footer a {
+	color: #a8ebef;
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer .love {
+	color: red;
+	font-size: 20px;
+}
+
+.container {
+	width: 88.85%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.logo {
+	background-image: url('../images/logo.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-indent: -700px;
+	display: inline-block;
+	width: 240px;
+	height: 53px;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-container {
+	display: flex;
+	align-items: center;
+}
+ul.menu {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	margin-right: 10px;
+}
+
+ul.menu li a {
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+ul.menu li a:hover {
+	color: #F2C94C;
+}
+
+.btn {
+	text-transform: uppercase;
+	white-space: nowrap;
+  	vertical-align: middle;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+a.btn {
+	text-decoration: none;
+}
+
+.btn-outline {
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.btn-outline:hover {
+    color: #1052AC;
+    background-color: #fff;
+}
+
+.hero-content {
+	text-align: center;
+	color: #fff;
+	margin-top: 100px;
+}
+
+.hero-content .title {
+	font-size: 45px;
+	font-weight: normal;
+	line-height: 1.4;
+}
+
+.hero-content .title strong {
+	font-weight: bold;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #F2C94C;
+}
+
+.hero-content .sub-title {
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.hero-content .start {
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.btn-start {
+	display: inline-block;
+	font-size: 18px;
+	padding: 10px 70px;
+	background-color: #6FCF97;
+	border: 1px solid #6FCF97;
+	border-radius: 2px;
+	margin-top: 15px;
+}
+.btn-start:hover {
+	background-color: #63b987;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* A little responsiveness tweak */
+@media only screen and (max-width: 768px) {
+	.header-content {
+		flex-wrap: wrap;
+	}
+	.menu-container {
+		width: 100%;
+		margin-top: 15px;
+	}
+}
